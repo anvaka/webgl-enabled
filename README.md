@@ -5,7 +5,7 @@ Checks whether browser supports webgl
 # usage
 
 ```
-var webglEnabled = requrire('webgl-enabled');
+var webglEnabled = requrire('webgl-enabled')();
 if (webglEnabled) {
   // yes, webgl is enabled
 }
