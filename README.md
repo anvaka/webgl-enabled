@@ -2,6 +2,15 @@
 
 Checks whether browser supports webgl
 
+# usage
+
+```
+var webglEnabled = requrire('webgl-enabled');
+if (webglEnabled) {
+  // yes, webgl is enabled
+}
+```
+
 # install
 
 With [npm](https://npmjs.org) do:
