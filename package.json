@@ -1,6 +1,6 @@
 {
   "name": "webgl-enabled",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Checks whether browser supports webgl",
   "main": "index.js",
   "scripts": {
