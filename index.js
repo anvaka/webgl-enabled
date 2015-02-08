@@ -1,7 +1,8 @@
-module.exports = function webglEnabled() {
+module.exports = function webglEnabled(canvas) {
   try {
-    var canvas = document.createElement('canvas');
-    return !!(window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl')));
+    if (!window.WebGLRenderingContext) return false;
+    if (!canvas) canvas = document.createElement('canvas');
+    return !!(canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
   } catch (e) {
     return false;
   }
